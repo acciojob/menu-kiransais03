@@ -87,18 +87,30 @@ const Menu = ()=>{
      
      {(clickbutton===1)&& data.map((elemobj,index)=>{return (<div key={index}>
         <div><img src={elemobj.img} alt={elemobj.category}/></div>
+        <div>{elemobj.title}--${elemobj.price}</div>
+        <div>{elemobj.desc}</div>
+        <p>.</p>
      </div>)})}
 
      {(clickbutton===2)&& data.map((elemobj,index)=>{return (elemobj.category==="breakfast" && <div key={index}>
         <div><img src={elemobj.img} alt={elemobj.category}/></div>
+        <div>{elemobj.title}--${elemobj.price}</div>
+        <div>{elemobj.desc}</div>
+        <p>.</p>
      </div>)})}
 
      {(clickbutton===3)&& data.map((elemobj,index)=>{return (elemobj.category==="lunch" && <div key={index}>
         <div><img src={elemobj.img} alt={elemobj.category}/></div>
+        <div>{elemobj.title}--${elemobj.price}</div>
+        <div>{elemobj.desc}</div>
+        <p>.</p>
      </div>)})}
 
      {(clickbutton===4)&& data.map((elemobj,index)=>{return (elemobj.category==="shakes" && <div key={index}>
         <div><img src={elemobj.img} alt={elemobj.category}/></div>
+        <div>{elemobj.title}--${elemobj.price}</div>
+        <div>{elemobj.desc}</div>
+        <p>.</p>
      </div>)})}
 
 
