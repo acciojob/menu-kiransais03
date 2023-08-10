@@ -80,10 +80,10 @@ const Menu = ()=>{
   let [clickbutton,setClickbutton]=useState(2);
     return (<>
     <h1>Our Menu</h1>
-    <button onClick={()=>{setClickbutton(1)}}>All</button>
-    <button onClick={()=>{setClickbutton(2)}}>Breakfast</button>
-    <button onClick={()=>{setClickbutton(3)}}>Lunch</button>
-    <button onClick={()=>{setClickbutton(4)}}>Shakes</button>
+    <button id="main" onClick={()=>{setClickbutton(1)}}>All</button>
+    <button id="filter-btn-1" onClick={()=>{setClickbutton(2)}}>Breakfast</button>
+    <button id="filter-btn-2" onClick={()=>{setClickbutton(3)}}>Lunch</button>
+    <button id="filter-btn-3" onClick={()=>{setClickbutton(4)}}>Shakes</button>
      
      {(clickbutton===1)&& data.map((elemobj,index)=>{return (<div key={index}>
         <div><img src={elemobj.img} alt={elemobj.category}/></div>
